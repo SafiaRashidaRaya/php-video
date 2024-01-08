@@ -1,20 +1,32 @@
 <?php 
-    echo "belajar";
-    echo "<br>";
-    echo 1000;
+    $buah = ['apel','jeruk',500,'pisang',300];
+
+    var_dump($buah);
+
     echo "<br>";
 
-    $hruf = "saya belajar";
+    echo $buah[1];
 
-    // echo $hruf;
+    echo "<br>";
+
+    foreach ($buah as $key => $value) {
+        echo $key. "=>" . $value;
+        echo "<br>";
+    }
+
+    //array asosiatif
+
+    $harga = ['mangga' => 300, 'apel' => 500, 'pisang' => 1000];
+
+    var_dump($harga);
+
+    echo "<br>";
+
+    foreach($harga as $key => $value){
+        echo $key. " harganya " .$value;
+        echo "<br>";
+    }
+
+    $isi = array_keys($harga);
+    var_dump($isi);
 ?>
-
-<?php 
-    echo "<h1>".$hruf."</h1>";
-    echo "<br>";
-    echo '<h3>$hruf</h3>';
-
-    echo "<br>"
-?>
-
-<h2><?=$hruf?></h2>
